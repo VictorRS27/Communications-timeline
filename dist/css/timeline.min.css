@@ -35,7 +35,7 @@
     padding: .625rem 2.5rem .625rem 0;
     position: relative;
     width: 50%;
-    z-index: 2;
+    z-index: 2
 }
 
 .timeline__item:after {
@@ -96,19 +96,20 @@
     left: -10px
 }
 
-.timeline__item a {
-    color: inherit;
-    text-decoration: none;
-}
-
 .timeline__content {
-    background-color: rgb(156, 156, 156);
-    border: 1px solid rgb(2, 2, 2);
+    background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 10px;
     color: #333;
     display: block;
     padding: 1.25rem;
-    position: relative
+    position: relative;
+    transition: 0.5s;
+}
+
+.timeline__content:hover {
+    background-color: darkgray;
+    border: 3px solid black;
 }
 
 .timeline__content:after,
@@ -153,10 +154,9 @@
 
 .timeline--horizontal {
     font-size: 0;
-    padding: 0 1.0rem;
+    padding: 0 2.5rem;
     overflow: hidden;
-    white-space: nowrap;
-    margin: 0 3px;
+    white-space: nowrap
 }
 
 .timeline--horizontal .timeline-divider {
@@ -188,7 +188,8 @@
     -o-transition: none;
     transition: none;
     vertical-align: top;
-    white-space: normal
+    white-space: normal;
+    cursor: pointer;
 }
 
 .timeline--horizontal .timeline__item:after {
@@ -203,8 +204,7 @@
 .timeline--horizontal .timeline__item .timeline__item__inner {
     display: table;
     height: 100%;
-    width: 100%;
-    cursor: pointer;
+    width: 100%
 }
 
 .timeline--horizontal .timeline__item .timeline__content__wrap {
@@ -218,24 +218,36 @@
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: 12px solid #ccc;
+    /*control border of up cards detail*/
     left: 50%;
     right: auto;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: 100%
+    top: 100%;
+    transition: 0.5s;
+}
+
+.timeline--horizontal .timeline__item .timeline__content:hover:before {
+    border-top: 12px solid rgb(0, 0, 0);
 }
 
 .timeline--horizontal .timeline__item .timeline__content:after {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #fff;
+    /*control the background of the up cards detail*/
     left: 50%;
     right: auto;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: 100%
+    top: 100%;
+    transition: 0.5s;
+}
+
+.timeline--horizontal .timeline__item .timeline__content:hover:after {
+    border-top: 10px solid darkgray;
 }
 
 .timeline--horizontal .timeline__item--bottom {
@@ -252,20 +264,35 @@
 
 .timeline--horizontal .timeline__item--bottom .timeline__content:before {
     border-bottom: 12px solid #ccc;
+    /*border of lower cards detail*/
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: none;
     bottom: 100%;
-    top: auto
+    top: auto;
+    transition: 0.5s;
+}
+
+.timeline--horizontal .timeline__item--bottom .timeline__content:hover:before {
+    border-bottom: 15px solid #000;
+    border-top: transparent;
+    padding-bottom: 1rem;
 }
 
 .timeline--horizontal .timeline__item--bottom .timeline__content:after {
     border-bottom: 10px solid #fff;
+    /* background of lower cards detail*/
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: none;
     bottom: 100%;
-    top: auto
+    top: auto;
+    transition: 0.5s;
+}
+
+.timeline--horizontal .timeline__item--bottom .timeline__content:hover:after {
+    border-bottom: 12px solid darkgray;
+    border-top: transparent;
 }
 
 .timeline-nav-button {
@@ -327,8 +354,7 @@
 }
 
 .timeline--mobile {
-    padding: 0;
-    margin-right: 10px;
+    padding: 0
 }
 
 .timeline--mobile:before {
@@ -353,7 +379,12 @@
     border-bottom: 12px solid transparent;
     border-right: 12px solid #ccc;
     border-left: none;
-    border-top: 12px solid transparent
+    border-top: 12px solid transparent;
+    transition: 0.5s;
+}
+
+.timeline--mobile .timeline__item .timeline__content:hover:before {
+    border-right: 12px solid #000;
 }
 
 .timeline--mobile .timeline__item .timeline__content:after {
@@ -361,7 +392,12 @@
     border-bottom: 10px solid transparent;
     border-right: 10px solid #fff;
     border-left: none;
-    border-top: 10px solid transparent
+    border-top: 10px solid transparent;
+    transition: 0.5s;
+}
+
+.timeline--mobile .timeline__item .timeline__content:hover:after {
+    border-right: 10px solid darkgray;
 }
 
 @-webkit-keyframes fadeIn {
