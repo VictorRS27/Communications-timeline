@@ -1,4 +1,71 @@
+body {
+    background-color: #121212;
+}
+
+hr {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    border-color: #555;
+}
+
 .informations {
-    margin: 2rem 3rem;
+    background-color: #121212;
     color: white;
+    line-height: 18px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.informations section {
+    padding: 2rem 3rem;
+    display: block;
+}
+
+.informations h2 {
+    line-height: 24px;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.title hr {
+    width: 100%;
+}
+
+section img {
+    height: 50%;
+    width: 50%;
+}
+
+.sideImg {
+    display: flex;
+}
+
+.uniteParagraph {
+    display: block;
+    padding-left: 20px;
+}
+
+.uniteParagraph p {
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 700px) {
+    .informations {
+        line-height: 20px;
+    }
+    .informations section {
+        padding: 2rem 2rem;
+    }
+    section img {
+        height: 100%;
+        width: 100%;
+    }
+    .sideImg {
+        display: block;
+    }
+    .uniteParagraph {
+        padding-left: 0;
+    }
 }
