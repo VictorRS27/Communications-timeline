@@ -1,23 +1,21 @@
 body {
-    background-color: #121212;
+    background-color: #1e1e1e;
 }
 
 hr {
-    background-color: rgb(0, 0, 0);
     margin: 0;
     border-color: #555;
 }
 
 .informations {
-    background-color: #121212;
-    color: white;
-    line-height: 18px;
-    font-size: 20px;
+    color: rgb(209, 209, 209);
+    line-height: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 
 .informations section {
-    padding: 2rem 3rem;
+    padding: 5vh 10vw;
     display: block;
 }
 
@@ -33,22 +31,35 @@ hr {
     width: 100%;
 }
 
-section img {
-    height: 50%;
-    width: 50%;
+section p {
+    margin: 8px 0;
 }
 
 .sideImg {
     display: flex;
 }
 
-.uniteParagraph {
-    display: block;
-    padding-left: 20px;
+.sideImg p {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-.uniteParagraph p {
-    margin-top: 0px;
+.uniteParagraph--right {
+    display: block;
+}
+
+.uniteParagraph--right img {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.uniteParagraph--left {
+    display: block;
+}
+
+.uniteParagraph--left img {
+    margin-right: 40px;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 700px) {
