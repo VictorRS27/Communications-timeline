@@ -1,5 +1,5 @@
 Object, onload = function() {
-    document.getElementById(1).style.display = "flex";
+    document.getElementById(1).style.display = "block";
 }
 
 function sabado(witch) {
