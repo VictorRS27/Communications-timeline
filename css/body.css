@@ -1,0 +1,129 @@
+body {
+    background-color: #1e1e1e;
+}
+
+hr {
+    margin: 0;
+    border-color: #a15100;
+}
+
+.timeline-header {
+    margin: 0 40px;
+    font-size: 2.5rem;
+    color: #e28715;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.notas {
+    color: rgb(209, 209, 209);
+    font-size: 10px;
+}
+
+.informations {
+    color: rgb(209, 209, 209);
+    line-height: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.informations section {
+    padding: 5vh 10vw;
+    display: block;
+}
+
+.informations h2 {
+    line-height: 24px;
+    color: #fec68b;
+}
+
+.informations span {
+    font-size: 18px;
+    font-weight: 700;
+    color: coral;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #e28715;
+}
+
+.title hr {
+    width: 100%;
+}
+
+section p {
+    margin: 8px 0;
+}
+
+.sideImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideImg p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.uniteParagraph--right {
+    display: block;
+}
+
+.uniteParagraph--right img {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.uniteParagraph--left {
+    display: block;
+}
+
+.uniteParagraph--left img {
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.video {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+}
+
+.changeSide-pc {
+    margin-left: 40px;
+}
+
+.changeSide-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .informations {
+        line-height: 20px;
+    }
+    .informations section {
+        padding: 2rem 2rem;
+    }
+    section img {
+        height: 100%;
+        width: 100%;
+    }
+    .sideImg {
+        display: block;
+    }
+    .uniteParagraph {
+        padding-left: 0;
+    }
+    .changeSide-pc {
+        display: none;
+    }
+    .changeSide-mobile {
+        display: flex;
+    }
+}

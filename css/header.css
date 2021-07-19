@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+html,
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 300px;
+    color: #eee;
+    /*background-image: url(./images/header.jpg);*/
+}
+
+.sides,
+.info {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.info {
+    width: 100%;
+    padding: 5% 10% 0 10%;
+    text-align: center;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+}
