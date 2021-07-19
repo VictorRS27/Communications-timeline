@@ -3,7 +3,7 @@ Object, onload = function() {
 }
 
 function sabado(witch) {
-    for (let index = 1; index < 9; index++) {
+    for (let index = 1; index < 8; index++) {
         document.getElementById(index).style.display = "none";
     }
 
